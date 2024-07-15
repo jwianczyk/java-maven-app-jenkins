@@ -13,7 +13,16 @@ def buildImage() {
 }
 
 def deployApp() {
-    echo 'deploying the application...'
+    echo 'deploying the application'
+    echo "deploy version ${params.VERSION}"
+}
+
+def buildApp() {
+    echo "building version ${NEW_VERSION}"
+}
+
+def testApp() {
+    echo 'testing the application'
 }
 
 return this
